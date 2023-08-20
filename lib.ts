@@ -191,7 +191,8 @@ export const ZodErrorSchema = z
         ZodNotFiniteIssueSchema,
       ]),
     ),
+    name: z.literal("ZodError"),
   })
   .describe(
     "@see https://github.com/colinhacks/zod/blob/master/ERROR_HANDLING.md",
-  ) as z.ZodType<Pick<z.ZodError, "issues">> // I screwed this up somehow but IDK how, so just asserting away for now
+  ) as z.ZodType<Pick<z.ZodError, "issues" | "name">> // I screwed this up somehow but IDK how, so just asserting away for now
