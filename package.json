@@ -1,0 +1,43 @@
+{
+  "name": "@llllvvuu/zoderror-zod-schema",
+  "packageManager": "pnpm@8.6.12",
+  "version": "0.1.0",
+  "description": "Zod schema matching the z.ZodError class.",
+  "keywords": [
+    "zod",
+    "codegen",
+    "openapi"
+  ],
+  "homepage": "https://github.com/llllvvuu/zoderror-zod-schema",
+  "bugs": "https://github.com/llllvvuu/zoderror-zod-schema/issues",
+  "repository": "github:llllvvuu/zoderror-zod-schema",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/cjs/lib.cjs",
+  "types": "dist/cjs/lib.d.ts",
+  "module": "dist/esm/lib.mjs",
+  "bin": {
+    "kvconsole": "./dist/cjs/cli.cjs"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/esm/lib.mjs",
+      "require": "./dist/cjs/lib.cjs"
+    }
+  },
+  "scripts": {
+    "build": "sh build.sh",
+    "prettier": "prettier --write .",
+    "prePublishOnly": "pnpm build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@llllvvuu",
+  "license": "ISC",
+  "devDependencies": {
+    "zod": "^3.22.2"
+  },
+  "peerDependencies": {
+    "zod": "^3.22.2"
+  }
+}
