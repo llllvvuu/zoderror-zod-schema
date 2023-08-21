@@ -1,7 +1,7 @@
 {
   "name": "@llllvvuu/zoderror-zod-schema",
   "packageManager": "pnpm@8.6.12",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Zod schema matching the z.ZodError class.",
   "keywords": [
     "zod",
@@ -15,11 +15,8 @@
     "dist"
   ],
   "main": "dist/cjs/lib.cjs",
-  "types": "dist/cjs/lib.d.ts",
+  "types": "dist/cjs/lib.d.cts",
   "module": "dist/esm/lib.mjs",
-  "bin": {
-    "kvconsole": "./dist/cjs/cli.cjs"
-  },
   "exports": {
     ".": {
       "import": "./dist/esm/lib.mjs",

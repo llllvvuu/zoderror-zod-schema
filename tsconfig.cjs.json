@@ -1,6 +1,6 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["lib.ts", "cli.ts"],
+  "include": ["lib.ts"],
   "compilerOptions": {
     "outDir": "./dist/cjs",
     "module": "commonjs",
