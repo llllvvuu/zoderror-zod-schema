@@ -2,7 +2,7 @@
   "name": "@llllvvuu/zoderror-zod-schema",
   "author": "@llllvvuu",
   "license": "ISC",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Zod schema matching the z.ZodError class.",
   "keywords": [
     "zod",
